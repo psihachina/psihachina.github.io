@@ -1,0 +1,150 @@
+/* Доп Задание сделать тёмную тему */
+body{
+    font-size: 26px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(255, 51, 0);
+}
+
+header{
+    position: relative;
+}
+
+.name-site h1{
+    padding: 20px;
+}
+
+hr{
+    width: 90%;
+}
+
+.navigation nav>ul{
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
+.navigation nav>ul>li{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+    border-bottom:  1px solid black;
+    width:  150px;
+    text-align: center;
+    margin: 2px;
+    transition: .5s;
+    height: 80px;
+}
+
+.content>.row>.col-4{
+    padding: 15px;
+}
+
+
+.news-content-small{
+    position: relative;    
+}
+
+.news-content-small a>p{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, .10);
+    margin-bottom: 0;
+    text-decoration-color: ivory;
+}
+
+.news-content-small a>img{
+    object-fit: cover;
+}
+.layer{
+    position: absolute;
+    border: 1 solid rgb(255, 0, 0);
+}
+.layer:hover
+{
+    border: 1px solid rgba(255, 255, 255, alpha);
+    margin: 10px;
+    transition: .5s;
+}
+.navigation nav>ul>li>a{
+    position:absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.section {
+    min-height: 90vh;
+}
+
+.section h2{
+    font-size: 56px;
+}
+
+.content-2>.col-4{
+    padding: 2.5px;
+}
+
+
+
+
+/* Кнопки навигации */
+
+@-webkit-keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  @keyframes hvr-pop {
+    50% {
+      -webkit-transform: scale(1.2);
+      transform: scale(1.2);
+    }
+  }
+  .hvr-pop {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+    -webkit-animation-name: hvr-pop;
+    animation-name: hvr-pop;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+  }
+
+/* Название сайта */
+  .hvr-rotate {
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+
+  .dark-mode {
+    background-color: rgb(19, 19, 19);
+    color: white;
+  }
