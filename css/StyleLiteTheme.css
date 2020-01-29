@@ -1,81 +1,60 @@
 /* Доп Задание сделать тёмную тему */
-body{
+
+body {
     font-size: 26px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica, sans-serif;
 }
 
-a{
-    color: black;
+a {
+    color: rgb(41, 35, 35);
 }
 
-a:hover{
+a:hover {
     text-decoration: none;
     color: rgb(255, 51, 0);
 }
 
-header{
+header {
     position: relative;
 }
 
-.name-site h1{
+.name-site h1 {
     padding: 20px;
 }
 
-hr{
+hr {
     width: 90%;
 }
 
-.navigation nav>ul{
-    text-align:center;
+.navigation nav>ul {
+    text-align: center;
     margin: 0;
     padding: 0;
 }
-.navigation nav>ul>li{
+
+.navigation nav>ul>li {
     position: relative;
     list-style: none;
     display: inline-block;
-    border-bottom:  1px solid black;
-    width:  150px;
+    border-bottom: 1px solid black;
+    width: 150px;
     text-align: center;
     margin: 2px;
     transition: .5s;
     height: 80px;
+    font-size: 2rem;
 }
 
-.content>.row>.col-4{
-    padding: 15px;
+.navigation nav>ul>li>a {
+    font-size: 1.8rem;
 }
 
-
-.news-content-small{
-    position: relative;    
+.img-fluid {
+    height: 513px;
 }
 
-.news-content-small a>p{
+.navigation nav>ul>li>a {
     position: absolute;
-    bottom: 0;
-    text-align: center;
-    font-size: 16px;
-    background-color: rgba(0, 0, 0, .10);
-    margin-bottom: 0;
-    text-decoration-color: ivory;
-}
-
-.news-content-small a>img{
-    object-fit: cover;
-}
-.layer{
-    position: absolute;
-    border: 1 solid rgb(255, 0, 0);
-}
-.layer:hover
-{
-    border: 1px solid rgba(255, 255, 255, alpha);
-    margin: 10px;
-    transition: .5s;
-}
-.navigation nav>ul>li>a{
-    position:absolute;
     left: 0;
     right: 0;
     bottom: 0;
@@ -85,39 +64,89 @@ hr{
     min-height: 90vh;
 }
 
-.section h2{
-    font-size: 56px;
+.section-2 {
+    padding: 0;
 }
 
-.content-2>.col-4{
-    padding: 2.5px;
+.section h2 {
+    font-size: 3.4rem;
 }
 
+.reviews>.row-sm:first-child {
+    margin-bottom: 20px;
+}
 
+.card-img-overlay>p:first-child {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.4rem;
+    left: 0.4rem;
+    background-color: rgba(0, 0, 0, .15);
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: .5s;
+}
+
+.card-img-overlay>p:last-child {
+    font-size: 16px;
+    padding: 0.5rem;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+}
+
+.card-img-overlay:hover {
+    background-color: rgba(0, 0, 0, .35);
+    transition: .5s;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, .05);
+    transition: .5s;
+    padding: 0rem;
+}
+
+.col-sm-6 {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.col-sm-4 {
+    padding: 0;
+}
+
+.col-sm-4>a>.card>.card-img-overlay {
+    padding: 0;
+}
 
 
 /* Кнопки навигации */
 
 @-webkit-keyframes hvr-pop {
     50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
-  }
-  @keyframes hvr-pop {
+}
+
+@keyframes hvr-pop {
     50% {
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
     }
-  }
-  .hvr-pop {
+}
+
+.hvr-pop {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  }
-  .hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+}
+
+.hvr-pop:hover,
+.hvr-pop:focus,
+.hvr-pop:active {
     -webkit-animation-name: hvr-pop;
     animation-name: hvr-pop;
     -webkit-animation-duration: 0.3s;
@@ -126,10 +155,12 @@ hr{
     animation-timing-function: linear;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
-  }
+}
+
 
 /* Название сайта */
-  .hvr-rotate {
+
+.hvr-rotate {
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
@@ -138,13 +169,42 @@ hr{
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
-  }
-  .hvr-rotate:hover, .hvr-rotate:focus, .hvr-rotate:active {
+}
+
+.hvr-rotate:hover,
+.hvr-rotate:focus,
+.hvr-rotate:active {
     -webkit-transform: rotate(4deg);
     transform: rotate(4deg);
-  }
+}
 
-  .dark-mode {
-    background-color: rgb(19, 19, 19);
+.dark-mode {
+    background-color: rgb(42, 42, 42);
     color: white;
-  }
+}
+
+.white-hr {
+    background-color: white;
+}
+
+@media (max-width: 991.98px) {
+    .img-fluid {
+        height: 337px;
+    }
+    .card-img-overlay>p:first-child {
+        position: absolute;
+        top: 0.4rem;
+        right: 0.4rem;
+        left: 0.4rem;
+        background-color: rgba(0, 0, 0, .15);
+        font-size: 0.6rem;
+        padding: 0.5rem;
+        transition: .5s;
+    }
+}
+
+@media (max-width: 765px) {
+    .img-fluid {
+        height: 337px;
+    }
+}
