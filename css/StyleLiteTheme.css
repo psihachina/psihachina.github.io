@@ -203,8 +203,8 @@ hr {
     }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 768px) {
     .img-fluid {
-        height: 337px;
+        height: 262px;
     }
 }
