@@ -20,6 +20,7 @@ header {
 
 .name-site h1 {
     padding: 20px;
+    font-size: 3.5rem !important;
 }
 
 hr {
@@ -43,6 +44,8 @@ hr {
     transition: .5s;
     height: 80px;
     font-size: 2rem;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .navigation nav>ul>li>a {
@@ -280,7 +283,15 @@ hr {
 }
 
 .version-mode {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
+}
+
+.version-mode-p {
+    font-size: 1.2rem !important;
+}
+
+.version-mode-a {
+    font-size: 1.9rem !important;
 }
 
 #button {
@@ -321,4 +332,8 @@ hr {
 #button.show {
     opacity: 1;
     visibility: visible;
+}
+
+.buttons {
+    margin: 10px;
 }
