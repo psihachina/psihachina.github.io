@@ -96,7 +96,7 @@ hr {
 }
 
 .card-img-overlay:hover {
-    background-color: rgba(0, 0, 0, .35);
+    background-color: rgba(0, 0, 0, .65);
     transition: .5s;
 }
 
@@ -280,7 +280,7 @@ hr {
 }
 
 .version-mode {
-    font-size: 3.5rem;
+    font-size: 2rem !important;
 }
 
 #button {
